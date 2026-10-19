@@ -1,0 +1,30 @@
+# Data
+data:
+  root: ./data
+  batch_size: 128          
+  num_workers: 4           # Set to 0 on Windows if DataLoader fails
+  pin_memory: true
+
+# Model
+model:
+  num_classes: 10
+  dropout: 0.5
+
+# Training
+train:
+  epochs: 100
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+  label_smoothing: 0.0
+  accum_steps: 1           # Gradient accumulation steps; use 4 with batch_size=32 to simulate 128
+  amp: true                # Enable mixed precision on CUDA
+  seed: 42
+  output_dir: ./outputs
+  print_freq: 50
+
+# Learning rate scheduler
+scheduler:
+  name: cosine             # cosine | step
+  step_size: 30            # Used only by step scheduler
+  gamma: 0.1               # Used only by step scheduler
