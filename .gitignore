@@ -1,0 +1,230 @@
+# =========================================================
+# General: OS, temporary files, logs, backups
+# =========================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+*.log
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*~
+
+# =========================================================
+# IDE / Editor
+# =========================================================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.metadata/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# =========================================================
+# Secrets and environment variables
+# Keep .env.example / .env.template as needed
+# =========================================================
+.env
+.env.*
+!.env.example
+!.env.template
+
+*.pem
+*.key
+*.crt
+*.secret
+*.token
+.ssh/
+credentials
+.credentials
+
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================================
+# Node.js / JavaScript / TypeScript
+# Lock files such as package-lock.json, pnpm-lock.yaml,
+# and yarn.lock should usually be committed
+# =========================================================
+node_modules/
+bower_components/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.yarn-integrity
+.node_repl_history
+*.tgz
+
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vite/
+.parcel-cache/
+.turbo/
+.swc/
+.eslintcache
+coverage/
+
+# =========================================================
+# Java / Kotlin / Maven / Gradle
+# =========================================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+target/
+bin/
+out/
+.gradle/
+.mvn/
+mvnw
+mvnw.cmd
+hs_err_pid*
+replay_pid*
+
+# Gradle / Maven wrapper files should usually be committed
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# =========================================================
+# C / C++
+# =========================================================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.test
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# =========================================================
+# Go
+# Whether to ignore vendor/ depends on vendor mode
+# =========================================================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+
+# =========================================================
+# Rust
+# Cargo.lock is usually committed for applications
+# =========================================================
+target/
+**/*.rs.bk
+
+# =========================================================
+# Infrastructure as Code
+# .terraform.lock.hcl should usually be committed
+# =========================================================
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.kubeconfig
+
+# =========================================================
+# Databases and backups
+# =========================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db-journal
+dump.sql
+
+# =========================================================
+# AI / Machine Learning
+# Adjust these rules to avoid ignoring source directories
+# =========================================================
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.model
+*.weights
+
+data/
+datasets/
+models/
+checkpoints/
+runs/
+tensorboard/
+wandb/
+lightning_logs/
